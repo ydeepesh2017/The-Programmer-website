@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Responsive design</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Logo image" class="logo" id="home">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#home" onclick="reset()">Home</a></li>
+                <li><a href="#about" onclick="reset()">About us</a></li>
+                <li><a href="#language" onclick="reset()">Languages Offered</a></li>
+                <li><a href="#special" onclick="reset()">Specialization Offered</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fa fa-bars unactive" onclick="ShowIcon()"></i>
+                <i class="fa fa-times active" onclick="RemoveIcon()"></i>
+            </div>
+        </nav>
+        <div class="main-heading">
+            <h2 class="main-heading-h1">Welcome</h2>
+            <h1 class="brand-name"> The Programmer </h1>
+            <button class="btn">Explore</button>
+        </div>
+    </header>
+    <section class="section">
+        <div>
+            <h2 id="about">ABOUT US</h2>
+            <P>We at The Programmer always try to make you a great coder by doing hands on project, daily practice
+                question to enhance your skills and challenge your capabilities. Plus we also inhance your interview
+                skills by taking mock interviews, We also have collaboration with many startups and multinational
+                compaines to get you placed after course completion. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officia ipsa dicta? Ducimus magni dolore laboriosam quam blanditiis deserunt dolorem. Illo saepe magnam officia ea ad autem veritatis quod! Recusandae placeat tempore nisi earum nesciunt adipisci totam aliquam quam. A velit aut modi in repudiandae accusamus eius ipsam perferendis eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, optio!</P>
+        </div>
+        <div>
+            <img src="images/img-5.jpg" alt="image" >
+        </div>
+    </section>
+    <div class="lang-offer">
+        <div>
+            <h2>Languages</h2>
+            <h3>Offered</h3>
+        </div>
+    </div>
+    <section class="section">
+        <div class="image-grid">
+            <img src="images/c++-img.jpg" alt="c++ image">
+            <img src="images/java-img.jfif" alt="java image">
+            <img src="images/python-img.jpg" alt="python image">
+            <img src="images/js-img.jpg" alt="javascript image">
+        </div>
+        <div>
+            <h2 id="language">Languages Offered</h2>
+            <P>We at The Programmer will teach you your favorite programming language, if you are not sure which
+                language to choose, just start with one language, if you learned how to code later you can easily change
+                your language in no time. we will tech you any language you want start from most easiest programming
+                language i.e. Python to most usable programming languages i.e. javascript and java,to fastest language
+                like c++ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem id accusantium nostrum deserunt voluptatem vel sequi, error libero tenetur velit eos tempora nesciunt quas neque distinctio minima nam sunt! Assumenda modi laborum aliquam nesciunt autem excepturi ex laboriosam neque, libero commodi recusandae quisquam magnam ratione. Similique quod impedit sequi voluptates voluptatem, neque corporis, ad, dolore quae corrupti natus inventore sit!</P>
+        </div>
+    </section>
+    <div class="lang-offered">
+        <div>
+            <h2>Specialization</h2>
+            <h3>Offered</h3>
+        </div>
+    </div>
+    <section class="section">
+        <div>
+            <h2 id="special">Specialization Offered</h2>
+            <P>We at The Programmer not only teach you programming languages like python, c++, javascript and java, but
+                we also offer you Specialization courses like machine learning and full stack development, after
+                completing this course you will be get a chance to sit in placement scheduled by over our institute Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, dolore vero distinctio dolor earum nam, voluptates deleniti recusandae tempore et, in sunt alias impedit dolores ipsum quos. Quod saepe, dolores ratione ipsam enim earum quae aut esse ab, nisi possimus! Incidunt odit optio facilis, dolor mollitia delectus fuga repellendus maiores eaque asperiores aliquid ipsa recusandae velit eius nesciunt iste magni.</P>
+        </div>
+        <div class="image-grid">
+            <img src="images/ml-img.jpeg" alt="image">
+            <img src="images/web-dev.jpg" alt="web development image">
+            <img src="images/cloud.jpg" alt="data science image">
+            <img src="images/data.jpg" alt="cloud computing image">
+        </div>
+    </section>
+    <footer>
+        <h2>ADMISSION PROCESS</h2>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis illum consectetur veniam quo provident
+            eius illo ullam eum autem reiciendis, officia atque similique debitis corrupti quam iure molestias error
+            quae distinctio omnis earum mollitia fugiat! Dolorem, possimus perspiciatis praesentium temporibus explicabo
+            illum exercitationem cupiditate! Velit quo necessitatibus ducimus in incidunt est, adipisci nulla culpa,
+            neque nemo voluptatum eos! Nobis assumenda accusantium autem, eos asperiores officia sint alias voluptates
+            similique quia quo magnam molestias quam co</div>
+        <h2>FOLLOW ALONG</h2>
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <h2>NEWSLETTER</h2>
+        <!-- <div> -->
+        <input type="text" placeholder="Your email...">
+    </footer>
+
+    <script>
+        
+        function RemoveIcon() {
+            if(screen.width < 700){
+
+            document.querySelector('#nav-list').style.display = 'none';
+            document.querySelector('.active').style.display = 'none';
+            document.querySelector('.unactive').style.display = 'block';
+            }
+        }
+
+        function ShowIcon() {
+            if(screen.width < 700){
+
+            document.querySelector('#nav-list').style.display = 'flex';
+            document.querySelector('.unactive').style.display = 'none';
+            document.querySelector('.active').style.display = 'block';
+            }
+        }
+
+        function reset(){
+            if(screen.width < 700){
+            RemoveIcon();
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
