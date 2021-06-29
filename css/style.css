@@ -15,7 +15,7 @@ img {
 
 header {
     overflow: hidden;
-    background: url('/images/img-7.jpeg');
+    background: url('../images/img-7.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -155,7 +155,7 @@ nav i {
 }
 .lang-offer {
     overflow:hidden;
-    background: url('/images/img-3.jpg');
+    background: url('../images/img-3.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,7 +186,7 @@ nav i {
 }
 .lang-offered {
 overflow:hidden;
-    background: url('/images/img-4.jpg');
+    background: url('../images/img-4.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
