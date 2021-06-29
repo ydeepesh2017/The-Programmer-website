@@ -20,7 +20,7 @@ header {
     background-position: center;
     background-size: cover;
     color: #fff;
-    height: 85vh;
+    height: 92vh;
 }
 
 nav {
@@ -183,7 +183,7 @@ nav i {
     margin-top: 1%;
     margin-bottom: 1%;
     width: 49%;
-    height:auto;
+    height:20vh;
 }
 .lang-offered {
 overflow:hidden;
