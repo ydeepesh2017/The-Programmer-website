@@ -275,7 +275,7 @@ footer input {
        font-size: 45px;
    }
 }
-@media screen and (min-width:950px) {
+@media screen and (min-width:1020px) {
     .main-heading{
         top:8%;
     }
